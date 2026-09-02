@@ -1,7 +1,4 @@
-// GitHub Pages compatibility loader: the original script.js is stored at the repository root.
-(function(){
-  var s = document.createElement('script');
-  s.src = '../script.js';
-  s.async = false;
-  document.head.appendChild(s);
-})();
+// GitHub Pages compatibility loader.
+// The original script.js lives at the repository root. Load it synchronously
+// at the original script position so all section containers already exist.
+document.write('<script src="../script.js"><\/script>');
