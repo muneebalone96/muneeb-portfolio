@@ -1,12 +1,5 @@
-/* GitHub Pages compatibility loader.
-   The original stylesheet is stored at the repository root.
-   This file keeps the existing design intact while making the original
-   stylesheet available at the path used by index.html. */
+/* GitHub Pages compatibility loader. */
 @import url("../style.css");
-
-/* The portfolio images are stored in the repository root. The original
-   HTML/JS references assets/images/... . Replace those broken image sources
-   visually with the existing root-level files. */
 img[src*="assets/images/muneeb-hero.webp"]{content:url("../muneeb-hero.webp");}
 img[src*="assets/images/muneeb-about.webp"]{content:url("../muneeb-about.webp");}
 img[src*="assets/images/ai-technology.jpg"]{content:url("../ai-technology.jpg");}
@@ -29,24 +22,8 @@ img[src*="assets/images/quran-academy.jpg"]{content:url("../quran-academy.jpg");
 img[src*="assets/images/social-media-marketing.jpg"]{content:url("../social-media-marketing.jpg");}
 img[src*="assets/images/teaching.jpg"]{content:url("../teaching.jpg");}
 img[src*="assets/images/wellness.jpg"]{content:url("../wellness.jpg");}
-
-/* Muneeb MR logo in the existing header — design/layout otherwise unchanged. */
-.brand{
-  display:inline-flex !important;
-  flex-direction:column;
-  align-items:flex-start;
-  justify-content:center;
-  gap:2px;
-}
-.brand::before{
-  content:"";
-  display:block;
-  width:46px;
-  height:38px;
-  background:url("../mr-logo.svg") center/contain no-repeat;
-  filter:drop-shadow(0 3px 5px rgba(212,166,55,.28));
-}
-.brand span{display:inline;}
-@media (max-width:700px){
-  .brand::before{width:40px;height:33px;}
-}
+.brand{display:inline-flex !important;align-items:center;gap:9px;}
+.brand::before{content:"";display:block;width:42px;height:42px;flex:0 0 42px;background:url("../mr-logo.webp") center/contain no-repeat;filter:drop-shadow(0 3px 5px rgba(212,166,55,.28));}
+.footer-brand{display:flex;align-items:center;gap:10px;}
+.footer-brand::before{content:"";display:block;width:42px;height:42px;flex:0 0 42px;background:url("../mr-logo.webp") center/contain no-repeat;filter:drop-shadow(0 3px 5px rgba(212,166,55,.28));}
+@media(max-width:700px){.brand::before,.footer-brand::before{width:36px;height:36px;flex-basis:36px;}}
