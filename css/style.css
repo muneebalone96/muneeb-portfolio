@@ -22,8 +22,18 @@ img[src*="assets/images/quran-academy.jpg"]{content:url("../quran-academy.jpg");
 img[src*="assets/images/social-media-marketing.jpg"]{content:url("../social-media-marketing.jpg");}
 img[src*="assets/images/teaching.jpg"]{content:url("../teaching.jpg");}
 img[src*="assets/images/wellness.jpg"]{content:url("../wellness.jpg");}
-.brand{display:inline-flex !important;align-items:center;gap:9px;}
-.brand::before{content:"";display:block;width:42px;height:42px;flex:0 0 42px;background:url("../mr-logo.webp") center/contain no-repeat;filter:drop-shadow(0 3px 5px rgba(212,166,55,.28));}
-.footer-brand{display:flex;align-items:center;gap:10px;}
-.footer-brand::before{content:"";display:block;width:42px;height:42px;flex:0 0 42px;background:url("../mr-logo.webp") center/contain no-repeat;filter:drop-shadow(0 3px 5px rgba(212,166,55,.28));}
-@media(max-width:700px){.brand::before,.footer-brand::before{width:36px;height:36px;flex-basis:36px;}}
+
+/* Premium MR branding: larger, brighter and clean on the dark portfolio. */
+.brand{display:inline-flex !important;align-items:center;gap:11px;font-size:1.5rem !important;font-weight:700;letter-spacing:.2px;}
+.brand::before{content:"";display:block;width:64px;height:56px;flex:0 0 64px;background:url("../mr-logo.svg") center/contain no-repeat;filter:drop-shadow(0 4px 7px rgba(224,175,55,.42));}
+.footer-brand{display:flex;align-items:center;gap:13px;font-size:1.45rem !important;font-weight:700;}
+.footer-brand::before{content:"";display:block;width:68px;height:61px;flex:0 0 68px;background:url("../mr-logo.svg") center/contain no-repeat;filter:drop-shadow(0 4px 8px rgba(224,175,55,.42));}
+
+/* Put a larger MR emblem directly above the main Muneeb Ur Rahman heading. */
+.hero-title::before{content:"";display:block;width:94px;height:82px;margin:0 0 12px 0;background:url("../mr-logo.svg") center/contain no-repeat;filter:drop-shadow(0 5px 9px rgba(224,175,55,.42));}
+@media(max-width:700px){
+ .brand{font-size:1.3rem !important;gap:8px;}
+ .brand::before{width:52px;height:46px;flex-basis:52px;}
+ .footer-brand::before{width:56px;height:50px;flex-basis:56px;}
+ .hero-title::before{width:72px;height:63px;margin-bottom:9px;}
+}
