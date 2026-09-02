@@ -1,0 +1,31 @@
+/* GitHub Pages compatibility loader.
+   The original stylesheet is stored at the repository root.
+   This file keeps the existing design intact while making the original
+   stylesheet available at the path used by index.html. */
+@import url("../style.css");
+
+/* The portfolio images are stored in the repository root. The original
+   HTML/JS references assets/images/... . Replace those broken image sources
+   visually with the existing root-level files. */
+img[src*="assets/images/muneeb-hero.webp"]{content:url("../muneeb-hero.webp");}
+img[src*="assets/images/muneeb-about.webp"]{content:url("../muneeb-about.webp");}
+img[src*="assets/images/ai-technology.jpg"]{content:url("../ai-technology.jpg");}
+img[src*="assets/images/coding-web-development.jpg"]{content:url("../coding-web-development.jpg");}
+img[src*="assets/images/creative-design.jpg"]{content:url("../creative-design.jpg");}
+img[src*="assets/images/dashboard-ui.jpg"]{content:url("../dashboard-ui.jpg");}
+img[src*="assets/images/ai-robot.jpg"]{content:url("../ai-robot.jpg");}
+img[src*="assets/images/digital-creator-workspace.jpg"]{content:url("../digital-creator-workspace.jpg");}
+img[src*="assets/images/digital-products.jpg"]{content:url("../digital-products.jpg");}
+img[src*="assets/images/network-marketing.jpg"]{content:url("../network-marketing.jpg");}
+img[src*="assets/images/gaming.jpg"]{content:url("../gaming.jpg");}
+img[src*="assets/images/marketing-strategy.jpg"]{content:url("../marketing-strategy.jpg");}
+img[src*="assets/images/digital-hub.jpg"]{content:url("../digital-hub.jpg");}
+img[src*="assets/images/qari-scrap.jpg"]{content:url("../qari-scrap.jpg");}
+img[src*="assets/images/afridi-gym.jpg"]{content:url("../afridi-gym.jpg");}
+img[src*="assets/images/nitro-rush.jpg"]{content:url("../nitro-rush.jpg");}
+img[src*="assets/images/nexora.jpg"]{content:url("../nexora.jpg");}
+img[src*="assets/images/ai-prompts-bundle.png"]{content:url("../ai-prompts-bundle.png");}
+img[src*="assets/images/quran-academy.jpg"]{content:url("../quran-academy.jpg");}
+img[src*="assets/images/social-media-marketing.jpg"]{content:url("../social-media-marketing.jpg");}
+img[src*="assets/images/teaching.jpg"]{content:url("../teaching.jpg");}
+img[src*="assets/images/wellness.jpg"]{content:url("../wellness.jpg");}
